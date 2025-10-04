@@ -18,8 +18,13 @@ export default defineConfig({
     rollupOptions: {
       external: [],
     },
+    target: "esnext",
+    minify: "esbuild",
   },
   optimizeDeps: {
     include: ["react", "react-dom"],
+  },
+  esbuild: {
+    target: "esnext",
   },
 });
